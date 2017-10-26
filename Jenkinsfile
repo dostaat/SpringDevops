@@ -15,7 +15,7 @@ pipeline{
             }
         }
         stage("Unit test"){
-            when { expression { return.params.TEST_PROJECT }}
+            when { expression { return params.TEST_PROJECT }}
             steps{
                 sh "./gradlew test"
             }
