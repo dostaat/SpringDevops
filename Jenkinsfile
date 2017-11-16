@@ -31,12 +31,12 @@ pipeline{
                 sh "docker run -d --rm -p 8765:8080 --name calculator szidom/devops-pelda"
             }
         }
-        stage("Acceptance Test"){
-            steps {
-                sh "sleep 60"
-                sh "./acceptance_test.sh"
-            }
-        }
+        #stage("Acceptance Test"){
+        #    steps {
+        #        sh "sleep 60"
+        #        sh "./acceptance_test.sh"
+        #    }
+        #}
     }
     post {
         always {
