@@ -2,5 +2,5 @@
   tasks:
   - name: confirm docker
     command: docker info
-  -name: docker run
+  - name: docker run
     command: docker run -d -p 8765:8080 szidom/devops-pelda
